@@ -20,14 +20,17 @@ public class Leibniz {
         //bandera:signo 1->sumar y 2->restar
         int signo=1;
         //iteración
+        System.out.println("La serie de Leibniz: ");
         for (int i = 0; i < num; i++) {
             if(signo==1){
             //res+=(NUM/denom)+res;
-            res=(NUM/denom)+res;
+            res+=(double) NUM/denom;
+            System.out.print("+ " + NUM + "/" + denom + " ");
                 signo=2;
                 denom+=2;
             }else{
-                res=res-(NUM/denom);
+                res-=(double)NUM/denom;
+                System.out.print("+ " + NUM + "/" + denom + " ");
                 signo=1;
                 denom+=2;
             }
