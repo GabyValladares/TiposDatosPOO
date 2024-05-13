@@ -34,6 +34,26 @@ public class Persona {
             System.out.println("Hola Menor de Edad");
             }
     }
+    //MÉTODO DE NO RETORNO QUE PERMITA COMPROBAR LA PRIMERA LETRA
+    public void comprobarVocal(){
+        if((nombres.charAt(0)=='A') || 
+                (nombres.charAt(0)=='E') || 
+                (nombres.charAt(0)=='I') || 
+                (nombres.charAt(0)=='O') || 
+                (nombres.charAt(0)=='U')){
+            System.out.println("El nombre inicia en una vocal");
+        }
+    }
+    //MÉTODO DE NO RETORNO QUE COMPRUEBE UNA ORACION
+    public void comprobarVocal(String oracion){
+        if((oracion.charAt(0)=='A') || 
+                (oracion.charAt(0)=='E') || 
+                (oracion.charAt(0)=='I') || 
+                (oracion.charAt(0)=='O') || 
+                (oracion.charAt(0)=='U')){
+            System.out.println("La oración inicia en una vocal");
+        }
+    }
 }//MÉTODO QUE NOS INDIQUE EL HORÓSCOPO 
 //public void saludarEdad(String edad){
 //        if(edad=="Aries"){
