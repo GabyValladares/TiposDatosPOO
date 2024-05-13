@@ -34,4 +34,7 @@ public class Main1 {
         //CONSUMIENTO MÉTODO (EL DATO DENTRO DE LOS PARÉNTESIS SE LLAMA PARÁMETROS ) 
         gaby.saludarEdad(1);
     }
+
+
+
 }

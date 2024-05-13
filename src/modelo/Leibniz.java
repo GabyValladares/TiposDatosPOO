@@ -24,10 +24,20 @@ public class Leibniz {
             if(signo==1){
             //res+=(NUM/denom)+res;
             res=(NUM/denom)+res;
+            
+          //______________________________________________
+          
+          //aqui erl  valor de las iteraciones  ingresa y da un resultado 
+          System.out.println("resultado"+ (i+1)+"="+res );
+          
+                System.out.println("_______________________");
+                res=         ;
                 signo=2;
                 denom+=2;
             }else{
                 res=res-(NUM/denom);
+            // lo mismo de arriba
+                System.out.println("resultado"+ (i+1)+"="+res );
                 signo=1;
                 denom+=2;
             }
@@ -40,6 +50,11 @@ public class Leibniz {
     public static void main(String[] args) {
         Leibniz prueba1=new Leibniz();
         prueba1.calcularLeibniz(7);
+        
+        
+        
+        
     }
+   
     
 }
