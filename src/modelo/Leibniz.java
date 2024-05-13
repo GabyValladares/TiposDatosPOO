@@ -18,7 +18,7 @@ public class Leibniz {
         //constante
         final int NUM=4;
         //bandera:signo 1->sumar y 2->restar
-        int signo=1;
+        double signo=1;
         //iteración
         for (int i = 0; i < num; i++) {
             if(signo==1){
