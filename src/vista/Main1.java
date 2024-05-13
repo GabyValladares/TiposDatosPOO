@@ -18,20 +18,38 @@ public class Main1 {
     
     public static void main(String[] args) {
         //1.-CREAR/INSTANCIAR/DECLARAR OBJETO
-        //NombreClase nombreObjeto=new NombreClase();
-        Persona gaby=new Persona();
-        //2.-DARLE/INCIALIZARLE DATOS
-        //nombreObjeto.atributo/variable="dato";
-       //ACCEDIENDO A LOS ATRIBUTOS
-        gaby.idPersona=001;
-        gaby.nombres="Gabriela";
-        gaby.apellidos="Valladares";
-        gaby.etnia="mestiza";
-        gaby.cedula=1003297792;
-        gaby.numeroTelefono=992937736;
-        //ACCEDIENDO A LOS MÉTODOS
-        gaby.saludar();
-        //CONSUMIENTO MÉTODO (EL DATO DENTRO DE LOS PARÉNTESIS SE LLAMA PARÁMETROS ) 
-        gaby.saludarEdad(1);
+        //NombreClase nombreObjeto = new NombreClase();
+        Persona alejandro = new Persona();
+        Persona personaA = new Persona();
+        
+        //2.- DARLE DATOS AL OBJETO
+        //nombreObjeto.atributo/variable = "dato";
+            //acceder a atributos
+            
+        //Objecto 1
+//        alejandro.idPersona = 001;
+//        alejandro.nombres = "Alejandro";
+//        alejandro.apellidos = "Cevallos";
+//        alejandro.etnia = "Mestizo";
+//        alejandro.cedula = 1004587919;
+//        alejandro.numeroTelefono = 995196339;
+//        
+//            //acceder a los métodos
+//        alejandro.saludar();
+//            //EL DATO DENTRO DEL PARANTESIS ES UN PARÁMETRO
+//        alejandro.saludarEdad(18);
+//        alejandro.horoscopo("Géminis");
+//        alejandro.comprobarVocal();
+        
+        //Objecto 2
+        personaA.idPersona = 002;
+        personaA.nombres = "Esdwin";
+        
+        //Metodos
+        personaA.comprobarVocal();
+        personaA.comprobarVocal("Hoy es Miercoles");
+        
+  
+        
     }
 }
