@@ -24,10 +24,12 @@ public class Leibniz {
             if(signo==1){
             //res+=(NUM/denom)+res;
             res=(NUM/denom)+res;
+            System.out.printf("Suma: %d / %d", NUM, denom);
                 signo=2;
                 denom+=2;
             }else{
                 res=res-(NUM/denom);
+                System.out.printf("Resta: %d / %d", NUM, denom);
                 signo=1;
                 denom+=2;
             }
