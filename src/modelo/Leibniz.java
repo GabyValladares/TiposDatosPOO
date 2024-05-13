@@ -20,17 +20,18 @@ public class Leibniz {
         //bandera:signo 1->sumar y 2->restar
         int signo=1;
         //iteración
+        //concatenar
         for (int i = 0; i < num; i++) {
             if(signo==1){
             //res+=(NUM/denom)+res;
-            res=(NUM/denom)+res;
-                signo=2;
-                denom+=2;
+             res += NUM / (double)denom;
+                signo = 2;
             }else{
-                res=res-(NUM/denom);
-                signo=1;
-                denom+=2;
+                res -= NUM / (double)denom;
+                signo = 1;
             }
+            System.out.println("Iteración " + (i + 1) + ": " + res);
+            denom += 2;
         }
         
         System.out.println("La aproximación es:"+res);
