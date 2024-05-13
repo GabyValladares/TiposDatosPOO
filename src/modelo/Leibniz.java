@@ -21,25 +21,20 @@ public class Leibniz {
         int signo=1;
         //iteración
         for (int i = 0; i < num; i++) {
-            if(signo==1){
-            //res+=(NUM/denom)+res;
-            res=(NUM/denom)+res;
-                signo=2;
-                denom+=2;
-            }else{
-                res=res-(NUM/denom);
-                signo=1;
-                denom+=2;
+            double termino = 4.0 / (2 * i + 1); // Calcula el término de la serie
+            if (i % 2 == 0) {
+                res += termino; // Suma el término si i es par
+            } else {
+                res -= termino; // Resta el término si i es impar
             }
         }
-        
-        System.out.println("La aproximación es:"+res);
-    
+
+        // Imprimir la aproximación
+        System.out.println("La aproximación de pi con " + num + " términos es: " + res);
     }
-    
+
     public static void main(String[] args) {
-        Leibniz prueba1=new Leibniz();
-        prueba1.calcularLeibniz(7);
+        Leibniz leibniz = new Leibniz();
+        leibniz.calcularLeibniz(10);
     }
-    
 }
