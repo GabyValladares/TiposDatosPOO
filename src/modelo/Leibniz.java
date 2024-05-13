@@ -10,7 +10,7 @@ package modelo;
  */
 public class Leibniz {
     //GENERAR UN MÉTODO DE NO RETORNO CON ARGUMENTO QUE PERMITA CALCULAR LEIBNIZ
-    public void calcularLeibniz(int num){
+    public void calcularLeibniz(double num){
         //acumulador:almacenar información incremental
         double res=0;
         //auxiliar de iteración
@@ -23,16 +23,17 @@ public class Leibniz {
         for (int i = 0; i < num; i++) {
             if(signo==1){
             //res+=(NUM/denom)+res;
-            res=(NUM/denom)+res;
+                System.out.print(NUM + "/" + denom + " + ");
+                res+=(NUM/denom);
                 signo=2;
                 denom+=2;
             }else{
-                res=res-(NUM/denom);
+                System.out.print(NUM + "/" + denom + " + ");
+                res-=(NUM/denom);
                 signo=1;
                 denom+=2;
             }
         }
-        
         System.out.println("La aproximación es:"+res);
     
     }
