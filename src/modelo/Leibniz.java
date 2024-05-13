@@ -14,26 +14,39 @@ public class Leibniz {
         //acumulador:almacenar información incremental
         double res=0;
         //auxiliar de iteración
-        int denom=1;
+        double denom=1;
         //constante
         final int NUM=4;
         //bandera:signo 1->sumar y 2->restar
         int signo=1;
         //iteración
         for (int i = 0; i < num; i++) {
+            
+//            System.out.println("La sere es:");
+            
+            System.out.print(( NUM+"/"+denom)+" = "+res );
+            
             if(signo==1){
             //res+=(NUM/denom)+res;
-            res=(NUM/denom)+res;
+                res = res+(NUM/denom);
                 signo=2;
                 denom+=2;
+//                serie+=("+"+NUM+"/"+denom);
+//                System.out.println("La serie es:"+(NUM+"/"+denom));
+                
             }else{
                 res=res-(NUM/denom);
                 signo=1;
                 denom+=2;
+//            System.out.println("La serie es:"+(NUM+"/"+denom));
+            
             }
         }
         
+            
+        
         System.out.println("La aproximación es:"+res);
+//        System.out.println("La serie es:"+NUM+"/"+denom);
     
     }
     
