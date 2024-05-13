@@ -23,11 +23,13 @@ public class Leibniz {
         for (int i = 0; i < num; i++) {
             if(signo==1){
             //res+=(NUM/denom)+res;
-            res=(NUM/denom)+res;
+            res=(NUM/(double)denom)+res;
+                System.out.println("Sumando:" + (NUM/(double)denom));
                 signo=2;
                 denom+=2;
             }else{
-                res=res-(NUM/denom);
+                res=res-(NUM/(double)denom);
+                System.out.println("Restando:" + (NUM/(double)denom));
                 signo=1;
                 denom+=2;
             }
