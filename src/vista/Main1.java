@@ -6,32 +6,33 @@ package vista;
 
 import modelo.Persona;
 
-/**
- *
- * @author Usuario
- */
-//1.-CONSUMIENTO OBJETOS
 public class Main1 {
-    //2.-LLAMAR A MÉTODO MAIN TRADUCTOR 
-    //O INTERPRETE DEL CÓDIGO 
-    //PROBAR EL CÓDIGO
-    
+
     public static void main(String[] args) {
-        //1.-CREAR/INSTANCIAR/DECLARAR OBJETO
-        //NombreClase nombreObjeto=new NombreClase();
-        Persona gaby=new Persona();
-        //2.-DARLE/INCIALIZARLE DATOS
-        //nombreObjeto.atributo/variable="dato";
-       //ACCEDIENDO A LOS ATRIBUTOS
-        gaby.idPersona=001;
-        gaby.nombres="Gabriela";
-        gaby.apellidos="Valladares";
-        gaby.etnia="mestiza";
-        gaby.cedula=1003297792;
-        gaby.numeroTelefono=992937736;
-        //ACCEDIENDO A LOS MÉTODOS
-        gaby.saludar();
-        //CONSUMIENTO MÉTODO (EL DATO DENTRO DE LOS PARÉNTESIS SE LLAMA PARÁMETROS ) 
-        gaby.saludarEdad(1);
+        Persona tania = new Persona();
+        tania.idPersona = 001;
+        tania.nombres = "Tania";
+        tania.apellidos = "Cacuango";
+        tania.etnia = "mestiza";
+        tania.cedula = 1003297792;
+        tania.numeroTelefono = 992937736;
+
+        tania.saludar();
+        tania.saludarEdad(18);
+        tania.horoscopo(11, 21);
+        tania.comprobarVocal(); // Llama al método para comprobar si el nombre inicia en vocal
+
+        Persona deiby = new Persona();
+        deiby.idPersona = 002;
+        deiby.nombres = "Deiby";
+        deiby.apellidos = "tirira";
+        deiby.etnia = "blanco";
+        deiby.cedula = 1001234567;
+        deiby.numeroTelefono = 987654321;
+
+        deiby.saludar();
+        deiby.saludarEdad(25);
+        deiby.horoscopo(11, 8);
+        deiby.comprobarVocal(); // Llama al método para comprobar si el nombre inicia en vocal
     }
 }
