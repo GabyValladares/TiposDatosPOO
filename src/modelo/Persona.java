@@ -34,11 +34,26 @@ public class Persona {
             System.out.println("Hola Menor de Edad");
             }
     }
-}//MÉTODO QUE NOS INDIQUE EL HORÓSCOPO 
-//public void saludarEdad(String edad){
-//        if(edad=="Aries"){
-//            System.out.println("Hola Mayor de Edad");
-//        }else{
-//            System.out.println("Hola Menor de Edad");
-//            }
-//    }
+        public void compararVolcal(){
+            if ((nombres.charAt(0)=='A')||
+                    (nombres.charAt(0)=='E')||
+                    (nombres.charAt(0)=='I')||
+                    (nombres.charAt(0)=='O')||
+                    (nombres.charAt(0)=='U')){
+                System.out.println("El nombre: "+nombres+"empieza con vocal");
+            }
+        
+        }  
+        public void compararVolcal(String oracion){
+            if ((oracion.charAt(0)=='A')||
+                    (oracion.charAt(0)=='E')||
+                    (oracion.charAt(0)=='I')||
+                    (oracion.charAt(0)=='O')||
+                    (oracion.charAt(0)=='U')){
+                System.out.println("El nombre: "+oracion+"empieza con vocal");
+            }
+        
+        }
+ }
+    
+

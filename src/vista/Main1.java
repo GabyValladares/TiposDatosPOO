@@ -33,5 +33,15 @@ public class Main1 {
         gaby.saludar();
         //CONSUMIENTO MÉTODO (EL DATO DENTRO DE LOS PARÉNTESIS SE LLAMA PARÁMETROS ) 
         gaby.saludarEdad(1);
+        
+        //NUEVO OBJETO
+        Persona a=new Persona();
+        a.nombres="Edgar";
+        a.compararVolcal();
+        a.nombres="Ulpiano";
+        a.compararVolcal("Ola de mar");
+        
+        
+//        Persona 
     }
 }
