@@ -34,4 +34,13 @@ public class Persona {
             System.out.println("Hola Menor de Edad");
             }
     }
-}
+
+}//MÉTODO QUE NOS INDIQUE EL HORÓSCOPO 
+//public void saludarEdad(String edad){
+//        if(edad=="Aries"){
+//            System.out.println("Hola Mayor de Edad");
+//        }else{
+//            System.out.println("Hola Menor de Edad");
+//            }
+//    }
+
