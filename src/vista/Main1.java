@@ -48,5 +48,11 @@ public class Main1 {
                 a.comprobarVocal();
 
         a.comprobarVocal("Oy es lunes");
+        //INSTANCIAR OBJETOS CON CONSTRUCCTORES
+        
+        
+        
+        
+        
     }
 }
