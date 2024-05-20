@@ -20,6 +20,38 @@ public class Persona {
     //1)MÉTODO DE NO RETORNO
     //SON SECCIONES DE CÓDIGO
     //PUEDEN POSEER VARIABLES LOCALES
+    
+    //SOBRECARGA: +2 métodos con el mismo nombre
+    //pero con diferente implementación (código o contenido)
+    
+    //3.1 MÉTODOS CONSTRUCTORES
+    //Constructor es la inicialización de valores de un objeto
+    //vacio : inicializa los atributos que el usuario desee
+    public Persona(){
+        
+    }
+    //3.2 MÉTODOS CONSTRUCTORES CON ATRIBUTOS
+    //ARGUMENTOS : los cuales son obligatiorios
+    public Persona(int idPersona, 
+            String nombres, String apellidos, String etnia, 
+            int cedula, int numeroTelefono){
+        //PUNTERO THIS: Apunta a un atributo global de la clase trabajada
+        this.idPersona = idPersona;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.etnia = etnia;
+        this.cedula = cedula;
+        this.numeroTelefono = numeroTelefono;
+    }
+    
+    public Persona(int idPersona, 
+            String nombres, String apellidos){
+        //PUNTERO THIS: Apunta a un atributo global de la clase trabajada
+        this.idPersona = idPersona;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+    }
+    
     public void saludar(){
         //MOSTRAR INFORMACIÓN RECURRIR A IMPRIMIR
         System.out.println("HOLA:"+nombres);

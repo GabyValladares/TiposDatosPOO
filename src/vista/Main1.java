@@ -15,17 +15,22 @@ public class Main1 {
     //2.-LLAMAR A MÉTODO MAIN TRADUCTOR 
     //O INTERPRETE DEL CÓDIGO 
     //PROBAR EL CÓDIGO
-    
+
     public static void main(String[] args) {
         //1.-CREAR/INSTANCIAR/DECLARAR OBJETO
         //NombreClase nombreObjeto = new NombreClase();
-        Persona alejandro = new Persona();
+        //Persona alejandro = new Persona();
         Persona personaA = new Persona();
+        Persona alejandro = new Persona();
+        alejandro.nombres = "Mario";
         
+        //NO SE PUEDE TENER EL MISMO NOMBRE DE OBJETO
+        //Persona alejandro = new Persona(1001, "Daniel", "Lomas");
+        Persona cevallos = new Persona(100, "Alejandro", "Cevallos", "Indígena", 1002003004, 995196339);
+
         //2.- DARLE DATOS AL OBJETO
         //nombreObjeto.atributo/variable = "dato";
-            //acceder a atributos
-            
+        //acceder a atributos
         //Objecto 1
 //        alejandro.idPersona = 001;
 //        alejandro.nombres = "Alejandro";
@@ -40,16 +45,13 @@ public class Main1 {
 //        alejandro.saludarEdad(18);
 //        alejandro.horoscopo("Géminis");
 //        alejandro.comprobarVocal();
-        
         //Objecto 2
         personaA.idPersona = 002;
         personaA.nombres = "Esdwin";
-        
+
         //Metodos
         personaA.comprobarVocal();
         personaA.comprobarVocal("Hoy es Miercoles");
-        
-  
-        
+
     }
 }
