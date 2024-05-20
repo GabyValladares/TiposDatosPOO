@@ -19,7 +19,32 @@ public class Persona {
     //1)MÉTODO DE NO RETORNO
     //SON SECCIONES DE CÓDIGO
     //PUEDEN POSEER VARIABLES LOCALES
-    public void saludar(){
+    
+    //3.1 MÉTODOS CONSTRUCTORES
+    //SOBRECARGA: +2 MÉTODOS CON EL MISMO NOMBRE
+    //PERO CON DIFERENTE IMPLEMENTACIÓN
+    //Constructor es la inicialización de valores de un objeto
+    //vacío : de inicializar los atributos que el usuario quiera
+    public Persona(){
+    }
+    //argumentos:cuales son atributos obligatorios
+    public Persona(int idPersona,String nombres,String apellidos,String etnia,int cedula, int numeroTelefono){
+        this.idPersona=idPersona;
+        this.nombres=nombres;
+        this.apellidos=apellidos;
+        this.etnia=etnia;
+        this.cedula=cedula;
+        this.numeroTelefono=numeroTelefono;
+    
+    }
+    public Persona(int idPersona,String nombres,String apellidos){
+        this.idPersona=idPersona;
+        this.nombres=nombres;
+        this.apellidos=apellidos;
+  
+    
+    }
+    public void saludar() {
         //MOSTRAR INFORMACIÓN RECURRIR A IMPRIMIR
         System.out.println("HOLA:"+nombres);
     }
@@ -34,11 +59,60 @@ public class Persona {
             System.out.println("Hola Menor de Edad");
             }
     }
-}//MÉTODO QUE NOS INDIQUE EL HORÓSCOPO 
-//public void saludarEdad(String edad){
-//        if(edad=="Aries"){
-//            System.out.println("Hola Mayor de Edad");
-//        }else{
-//            System.out.println("Hola Menor de Edad");
-//            }
-//    }
+    public void verificarHoroscopo(String signoZodiaco){
+    
+        if(signoZodiaco=="Aries"){
+            System.out.println("Aries hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Cancer"){
+            System.out.println("Cancer hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Escorpio"){
+            System.out.println("Escorpio hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Libra"){
+            System.out.println("Libra hoy te ganaras la lotería");
+        }
+        else if(signoZodiaco=="Leo"){
+            System.out.println("Leo hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Géminis"){
+            System.out.println("Géminis hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Sagitario"){
+            System.out.println("Sagitario hoy te ganaras la lotería");
+        }
+        else if(signoZodiaco=="Virgo"){
+            System.out.println("Virgo hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Sagitario"){
+            System.out.println("Sagitario hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Acuario"){
+            System.out.println("Acuario hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Capricornio"){
+            System.out.println("Capricornio hoy te ganaras la lotería");
+        }else if(signoZodiaco=="Piscis"){
+            System.out.println("Piscis hoy te ganaras la lotería");
+        }
+        
+    }
+    
+    public void comprobarVocal(){
+        if((nombres.charAt(0)=='A')||
+                (nombres.charAt(0)=='E')||
+                (nombres.charAt(0)=='I')||
+                (nombres.charAt(0)=='O')||
+                (nombres.charAt(0)=='U')){
+            System.out.println("El nombre :"+ nombres +" inicia en una vocal");
+        }
+       }
+    
+    public void comprobarVocal(String oracion){
+        if((oracion.charAt(0)=='A')||
+                (oracion.charAt(0)=='E')||
+                (oracion.charAt(0)=='I')||
+                (oracion.charAt(0)=='O')||
+                (oracion.charAt(0)=='U')){
+            System.out.println("La oracion inicia en una vocal");
+        }
+       }
+    
+    
+    
+    
+    
+}

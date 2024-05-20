@@ -5,6 +5,7 @@
 package vista;
 
 import modelo.Persona;
+import modelo.PersonaEncapsulamiento;
 
 /**
  *
@@ -33,5 +34,33 @@ public class Main1 {
         gaby.saludar();
         //CONSUMIENTO MÉTODO (EL DATO DENTRO DE LOS PARÉNTESIS SE LLAMA PARÁMETROS ) 
         gaby.saludarEdad(1);
+        //OBJETO 1
+        Persona david=new Persona();
+        david.nombres="David";
+        david.etnia="mestizo";
+        david.verificarHoroscopo("Virgo");
+        david.comprobarVocal();
+        
+        //NUEVO OBJETO
+        Persona a=new Persona();
+        a.nombres="Edgar";
+        a.comprobarVocal();
+        a.nombres="Ulpiano";
+                a.comprobarVocal();
+
+        a.comprobarVocal("Oy es lunes");
+        //INSTANCIAR OBJETOS CON CONSTRUCCTORES
+        
+        Persona karen=new Persona();
+        karen.nombres="Andrea";
+       Persona karen1=new Persona(100, "Karen", "Paez");
+     
+        
+        Persona paez=new Persona(100,"Pepito", "Cumbal", "Mestiza", 1002003004, 954485);
+        
+        
+         PersonaEncapsulamiento p1=new PersonaEncapsulamiento();
+         p1.setNombres("karen");
+         p1.imprimir();
     }
 }
