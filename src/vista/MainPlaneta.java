@@ -32,9 +32,10 @@ public class MainPlaneta {
         Scanner en = new Scanner(System.in);
         System.out.println("Ingrese el número de planetas a completar:");
         int v=0;
-       // do{
+        
+       //do{
         int numPlanetas=en.nextInt();
-        //}while()
+        //}while();
         for (int i = 1; i <=numPlanetas; i++) {            
        
         Planeta p = new Planeta();
