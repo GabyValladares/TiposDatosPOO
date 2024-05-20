@@ -5,6 +5,7 @@
 package vista;
 
 import modelo.Persona;
+import modelo.PersonaEncapsulamiento;
 
 /**
  *
@@ -46,12 +47,19 @@ public class Main1 {
 //        alejandro.horoscopo("Géminis");
 //        alejandro.comprobarVocal();
         //Objecto 2
-        personaA.idPersona = 002;
-        personaA.nombres = "Esdwin";
-
-        //Metodos
-        personaA.comprobarVocal();
-        personaA.comprobarVocal("Hoy es Miercoles");
-
+//        personaA.idPersona = 002;
+//        personaA.nombres = "Esdwin";
+//
+//        //Metodos
+//        personaA.comprobarVocal();
+//        personaA.comprobarVocal("Hoy es Miercoles");
+        
+        
+        
+        //CREACIÓN OBJETO DE MODELO PERSONAENCAPSULAMIENTO
+        PersonaEncapsulamiento personaX = new PersonaEncapsulamiento();
+        personaX.setNombres("David");
+        personaX.imprimir();
+        
     }
 }
