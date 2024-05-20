@@ -60,13 +60,13 @@ public class Planeta {
       public double getMasa(){
         return masa;
     }
-    public void setMasa(int n){
+    public void setMasa(double n){
         this.masa=n;
     }
     public double getVolumen(){
         return volumen;
     }
-    public void setVolumen(int n){
+    public void setVolumen(double n){
         this.volumen=n;
     }
       public int getDistanciaSol(){
@@ -92,7 +92,7 @@ public class Planeta {
     public void imprimir(){
         System.out.println("Datos Planeta\n"+
                 "Nombre:"+getNombre()+"\n"+
-                "Cantidad Satélitas"+getCantidadSatelites()+"\n"+
+                "Cantidad Satélites: "+getCantidadSatelites()+"\n"+
                 "Masa:"+getMasa()+"\n"+
                 "Volumen:"+getVolumen()+"\n"+
                 "Diámetro:"+getDiametro()+"\n"+
@@ -101,4 +101,12 @@ public class Planeta {
                 "¿Es Observable?:"+getObservable());
     }
     
+    public void calcularDensidad(){
+        double densidad=getMasa()/getVolumen();
+        System.out.println("La densidad es:"+densidad);
+    }
+    
+    public double calcularDensidad(int m){
+        return getMasa()/getVolumen();
+    }
 }
