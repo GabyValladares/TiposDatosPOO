@@ -34,6 +34,24 @@ public class Persona {
             System.out.println("Hola Menor de Edad");
             }
     }
+        public Persona(){
+        
+    }
+    //Constructor con Argumentos: cuales son los atributos obligatorios 
+    public Persona(int idPersona,String nombres,String apellidos,String etnia,int cedula,int numeroTelefono){
+        this.idPersona=idPersona;
+        this.nombres=nombres;
+        this.apellidos=apellidos;
+        this.etnia=etnia;
+        this.cedula=cedula;
+        this.numeroTelefono=numeroTelefono;
+    }
+    public Persona(int idPersona,String nombres,String apellidos,String etnia){
+        this.idPersona=idPersona;
+        this.nombres=nombres;
+        this.apellidos=apellidos;
+        this.etnia=etnia; //tHIS puntero que me permite usar dos variables con el mismo nombre
+    }    
 }//MÉTODO QUE NOS INDIQUE EL HORÓSCOPO 
 //public void saludarEdad(String edad){
 //        if(edad=="Aries"){
