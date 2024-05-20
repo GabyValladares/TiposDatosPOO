@@ -40,8 +40,12 @@ public class Main1 {
         a.compararVolcal();
         a.nombres="Ulpiano";
         a.compararVolcal("Ola de mar");
+        //INSTANCIAR OBJETOS CON CONSTRUCTORES
+        //no se puede declarar el mismo objeto con las mismas variables 
+        Persona davidP=new Persona();
+        davidP.nombres="David";
         
         
-//        Persona 
+        Persona puetate=new Persona(100, "David", "Puetate", "Mestiza", 1004735617, 963294841);
     }
 }

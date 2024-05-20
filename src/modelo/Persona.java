@@ -19,6 +19,34 @@ public class Persona {
     //1)MÉTODO DE NO RETORNO
     //SON SECCIONES DE CÓDIGO
     //PUEDEN POSEER VARIABLES LOCALES
+    
+    
+    //3.1 METODO CONSTRUCTOR
+    // inicializacion de valores de un objeto
+    //SOBRECARGA: dos o mas metosos con el mismo nombre 
+    // con diferente implentacion 
+    // no se declara ni publico ni privado 
+    //permite inicializar con datos o no 
+    //SOBREESCRITURA: cambiar o modificar el valor de una variable
+    //inicializar un valor especifico de un objeto 
+    public Persona(){
+    
+    }
+    // con argumentos: cuales son los atributos obligatorios 
+    public Persona(int idPersona, String nombre, String apellidos,String etnia,int cedula,int numeroTelefono ){
+        //this: puntero que hace que el valor de la variable goblar se sobreescriba con lo de la variable local 
+        this.idPersona=idPersona;
+        this.nombres=nombre;
+        this.apellidos=nombre;
+        this.etnia=etnia;
+        this.cedula=cedula;
+        this.numeroTelefono=numeroTelefono;
+    }
+     public Persona(int idPersona, String nombre, String apellidos){
+     }
+    
+    
+    
     public void saludar(){
         //MOSTRAR INFORMACIÓN RECURRIR A IMPRIMIR
         System.out.println("HOLA:"+nombres);
